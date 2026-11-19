@@ -1,0 +1,41 @@
+# One command starts everything:   docker compose up
+# Then open http://localhost:8000
+#
+# The first start downloads the language model (4.7 GB) into a Docker volume;
+# later starts reuse it. Another model:   LHO_MODEL=llama3.2:3b docker compose up
+# Docker needs about 8 GB of memory for the default model.
+
+services:
+  ollama:                       # serves the open-source language model
+    image: ollama/ollama
+    volumes:
+      - ollama:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  model:                        # downloads the model once, then exits
+    image: ollama/ollama
+    depends_on:
+      ollama:
+        condition: service_healthy
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+    entrypoint: ["ollama", "pull", "${LHO_MODEL:-qwen2.5:7b}"]
+    restart: "no"
+
+  app:                          # chat page + agent + MCP server + knowledge graph
+    build: .
+    depends_on:
+      model:
+        condition: service_completed_successfully
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+      LHO_MODEL: ${LHO_MODEL:-qwen2.5:7b}
+    ports:
+      - "8000:8000"
+
+volumes:
+  ollama:

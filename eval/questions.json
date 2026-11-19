@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "category": "count",
+    "question": "How many test records are in the graph in total?",
+    "expect": {
+      "numbers": [
+        14800
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 2,
+    "category": "count",
+    "question": "How many tests were positive for BRSV in 2024?",
+    "expect": {
+      "numbers": [
+        38
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 3,
+    "category": "count",
+    "question": "How many samples were tested for Mycoplasma bovis in Ireland?",
+    "expect": {
+      "numbers": [
+        297
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 4,
+    "category": "count",
+    "question": "How many PCR tests did lab 2 perform?",
+    "expect": {
+      "numbers": [
+        1919
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 5,
+    "category": "count",
+    "question": "How many tests on veal calves were positive for Pasteurella multocida?",
+    "expect": {
+      "numbers": [
+        141
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 6,
+    "category": "pigs",
+    "question": "How many pig samples were tested for PRRS in Spain?",
+    "expect": {
+      "numbers": [
+        668
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 7,
+    "category": "count",
+    "question": "How many tests were done in France from 2020 to 2022?",
+    "expect": {
+      "numbers": [
+        1365
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 8,
+    "category": "count",
+    "question": "How many positive Mannheimia haemolytica results came from autopsy samples in lab 4?",
+    "expect": {
+      "numbers": [
+        45
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 9,
+    "category": "positivity",
+    "question": "What is the positivity rate of bovine coronavirus across all laboratories?",
+    "expect": {
+      "numbers": [
+        30.9
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 10,
+    "category": "positivity",
+    "question": "What percentage of PI3 tests were positive in Belgium?",
+    "expect": {
+      "numbers": [
+        11.0
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 11,
+    "category": "positivity",
+    "question": "What is the positivity percentage for Histophilus somni when tested by culture?",
+    "expect": {
+      "numbers": [
+        13.6
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 12,
+    "category": "positivity",
+    "question": "What was the BRSV positivity rate in January 2022?",
+    "expect": {
+      "numbers": [
+        22.6
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 13,
+    "category": "pigs",
+    "question": "What is the positivity rate of swine influenza virus in pigs?",
+    "expect": {
+      "numbers": [
+        24.3
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 14,
+    "category": "positivity",
+    "question": "What is the positivity rate for bovine coronavirus in dairy cattle tested with PCR?",
+    "expect": {
+      "numbers": [
+        26.7
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 15,
+    "category": "comparison",
+    "question": "Which pathogen has the highest positivity rate overall?",
+    "expect": {
+      "numbers": [],
+      "any_text": [
+        "PRRS",
+        "Porcine reproductive"
+      ],
+      "all_text": [],
+      "refusal": false,
+      "compare": "pathogen",
+      "rivals": [
+        "PM",
+        "Pasteurella multocida",
+        "BRSV",
+        "respiratory syncytial",
+        "BCV",
+        "coronavirus",
+        "corona virus",
+        "MB",
+        "Mycoplasma bovis",
+        "PI3",
+        "parainfluenza",
+        "HS",
+        "Histophilus",
+        "MH",
+        "Mannheimia haemolytica",
+        "hyopneumoniae",
+        "Lawsonia",
+        "swine influenza"
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "category": "comparison",
+    "question": "Which pathogen has the lowest positivity rate overall?",
+    "expect": {
+      "numbers": [],
+      "any_text": [
+        "PI3",
+        "parainfluenza"
+      ],
+      "all_text": [],
+      "refusal": false,
+      "compare": "pathogen",
+      "rivals": [
+        "PM",
+        "Pasteurella multocida",
+        "BRSV",
+        "respiratory syncytial",
+        "BCV",
+        "coronavirus",
+        "corona virus",
+        "MB",
+        "Mycoplasma bovis",
+        "HS",
+        "Histophilus",
+        "MH",
+        "Mannheimia haemolytica",
+        "hyopneumoniae",
+        "Lawsonia",
+        "swine influenza",
+        "PRRS",
+        "Porcine reproductive"
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "category": "comparison",
+    "question": "Which laboratory tested the most samples?",
+    "expect": {
+      "numbers": [],
+      "any_text": [
+        "lab 1",
+        "laboratory 1"
+      ],
+      "all_text": [],
+      "refusal": false,
+      "compare": "lab",
+      "rivals": [
+        "lab 2",
+        "laboratory 2",
+        "lab 3",
+        "laboratory 3",
+        "lab 4",
+        "laboratory 4",
+        "lab 5",
+        "laboratory 5",
+        "lab 6",
+        "laboratory 6",
+        "lab 7",
+        "laboratory 7",
+        "lab 8",
+        "laboratory 8"
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "category": "comparison",
+    "question": "Which country has the highest positivity rate for BRSV?",
+    "expect": {
+      "numbers": [],
+      "any_text": [
+        "France"
+      ],
+      "all_text": [],
+      "refusal": false,
+      "compare": "country",
+      "rivals": [
+        "Belgium",
+        "The Netherlands",
+        "Ireland"
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "category": "comparison",
+    "question": "Which breed has the highest positivity rate for Mycoplasma bovis?",
+    "expect": {
+      "numbers": [],
+      "any_text": [
+        "Veal"
+      ],
+      "all_text": [],
+      "refusal": false,
+      "compare": "breed",
+      "rivals": [
+        "Dairy",
+        "Beef",
+        "Mixed",
+        "Unknown",
+        "Suckler"
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "category": "comparison",
+    "question": "Which diagnostic test gives the highest positivity rate for Pasteurella multocida?",
+    "expect": {
+      "numbers": [],
+      "any_text": [
+        "NPS"
+      ],
+      "all_text": [],
+      "refusal": false,
+      "compare": "diagnostic_test",
+      "rivals": [
+        "Culture",
+        "PCR"
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "category": "comparison",
+    "question": "For Mannheimia haemolytica, which gives a higher positivity rate: PCR or culture?",
+    "expect": {
+      "numbers": [],
+      "any_text": [
+        "PCR"
+      ],
+      "all_text": [],
+      "refusal": false,
+      "compare": "diagnostic_test",
+      "rivals": [
+        "Culture"
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "category": "pigs",
+    "question": "Which pig pathogen has the highest positivity rate?",
+    "expect": {
+      "numbers": [],
+      "any_text": [
+        "PRRS",
+        "Porcine reproductive"
+      ],
+      "all_text": [],
+      "refusal": false,
+      "compare": "pathogen",
+      "rivals": [
+        "hyopneumoniae",
+        "Lawsonia",
+        "swine influenza"
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "category": "time",
+    "question": "In which year was the BRSV positivity rate highest?",
+    "expect": {
+      "numbers": [],
+      "any_text": [
+        "2025"
+      ],
+      "all_text": [],
+      "refusal": false,
+      "compare": "year",
+      "rivals": [
+        "2019",
+        "2023",
+        "2021",
+        "2020",
+        "2022",
+        "2024"
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "category": "time",
+    "question": "In which month of the year is BRSV positivity highest?",
+    "expect": {
+      "numbers": [],
+      "any_text": [
+        "January",
+        "month 01",
+        "month 1",
+        "(01)"
+      ],
+      "all_text": [],
+      "refusal": false,
+      "compare": "month_of_year",
+      "rivals": [
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "category": "pigs",
+    "question": "In pigs, which production stage has the highest positivity rate for Mycoplasma hyopneumoniae?",
+    "expect": {
+      "numbers": [],
+      "any_text": [
+        "Finishing"
+      ],
+      "all_text": [],
+      "refusal": false,
+      "compare": "production_stage",
+      "rivals": [
+        "Weaning",
+        "Suckling",
+        "Nursery",
+        "Breeding"
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "category": "ontology reasoning",
+    "question": "How many tests were positive for bacterial pathogens?",
+    "expect": {
+      "numbers": [
+        2522
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 27,
+    "category": "ontology reasoning",
+    "question": "What is the positivity rate of viral pathogens in the Netherlands?",
+    "expect": {
+      "numbers": [
+        20.0
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 28,
+    "category": "ontology reasoning",
+    "question": "How many tests for viruses were done with NPS?",
+    "expect": {
+      "numbers": [
+        511
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 29,
+    "category": "ontology reasoning",
+    "question": "What is the positivity rate of bacterial pathogens in beef cattle?",
+    "expect": {
+      "numbers": [
+        27.7
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 30,
+    "category": "ontology knowledge",
+    "question": "What is BRSV?",
+    "expect": {
+      "numbers": [],
+      "any_text": [
+        "respiratory syncytial"
+      ],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 31,
+    "category": "ontology knowledge",
+    "question": "Is PI3 a virus or a bacterium?",
+    "expect": {
+      "numbers": [],
+      "any_text": [
+        "virus"
+      ],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 32,
+    "category": "ontology knowledge",
+    "question": "What does TTA stand for?",
+    "expect": {
+      "numbers": [],
+      "any_text": [
+        "trans-tracheal aspirate",
+        "transtracheal aspirate",
+        "trans tracheal aspirate"
+      ],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 33,
+    "category": "ontology knowledge",
+    "question": "According to the ontology, which type of disease does Pasteurella multocida cause?",
+    "expect": {
+      "numbers": [],
+      "any_text": [
+        "bacterial disease"
+      ],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 34,
+    "category": "ontology knowledge",
+    "question": "According to the ontology, which countries are geographic neighbours of Belgium?",
+    "expect": {
+      "numbers": [],
+      "any_text": [],
+      "all_text": [
+        "France",
+        "Netherlands"
+      ],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 35,
+    "category": "multilingual",
+    "question": "Hoeveel testen met kweek waren positief?",
+    "expect": {
+      "numbers": [
+        689
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 36,
+    "category": "multilingual",
+    "question": "Hoeveel testen zijn er uitgevoerd in België?",
+    "expect": {
+      "numbers": [
+        4400
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 37,
+    "category": "multilingual",
+    "question": "How many tests were positive for Bovine orthopneumovirus?",
+    "expect": {
+      "numbers": [
+        251
+      ],
+      "any_text": [],
+      "all_text": [],
+      "refusal": false,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 38,
+    "category": "no data",
+    "question": "How many tests were positive for Salmonella?",
+    "expect": {
+      "numbers": [],
+      "any_text": [],
+      "all_text": [],
+      "refusal": true,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 39,
+    "category": "no data",
+    "question": "How many poultry samples were positive for infectious bronchitis?",
+    "expect": {
+      "numbers": [],
+      "any_text": [],
+      "all_text": [],
+      "refusal": true,
+      "compare": "",
+      "rivals": []
+    }
+  },
+  {
+    "id": 40,
+    "category": "no data",
+    "question": "How many BRSV tests were positive in 2030?",
+    "expect": {
+      "numbers": [],
+      "any_text": [],
+      "all_text": [],
+      "refusal": true,
+      "compare": "",
+      "rivals": []
+    }
+  }
+]

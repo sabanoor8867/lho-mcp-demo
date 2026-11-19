@@ -1,0 +1,1261 @@
+{
+  "summary": {
+    "model": "ollama:qwen2.5:7b",
+    "questions": 40,
+    "correct": 39,
+    "accuracy_percent": 97.5,
+    "median_seconds": 27.9,
+    "mean_seconds": 32.9,
+    "by_category": {
+      "count": "7/7",
+      "pigs": "4/4",
+      "positivity": "4/5",
+      "comparison": "7/7",
+      "time": "2/2",
+      "ontology reasoning": "4/4",
+      "ontology knowledge": "5/5",
+      "multilingual": "3/3",
+      "no data": "3/3"
+    },
+    "total_minutes": 22.0
+  },
+  "results": [
+    {
+      "id": 1,
+      "category": "count",
+      "question": "How many test records are in the graph in total?",
+      "expected": {
+        "numbers": [
+          14800
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "There are 14,800 test records in total in the graph.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 81.1,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "species": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "count",
+      "question": "How many tests were positive for BRSV in 2024?",
+      "expected": {
+        "numbers": [
+          38
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "In 2024, 38 tests for BRSV were positive out of 184 total tests, which is a positivity rate of 20.7%.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 24.4,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "pathogen": "BRSV",
+            "year": "2024",
+            "group_by": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "count",
+      "question": "How many samples were tested for Mycoplasma bovis in Ireland?",
+      "expected": {
+        "numbers": [
+          297
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "297 samples were tested for Mycoplasma bovis in Ireland.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 19.4,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "pathogen": "Mycoplasma bovis",
+            "country": "Ireland",
+            "species": "Cattle",
+            "group_by": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "count",
+      "question": "How many PCR tests did lab 2 perform?",
+      "expected": {
+        "numbers": [
+          1919
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "Lab 2 performed 1,919 PCR tests.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 16.9,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "diagnostic_test": "PCR",
+            "species": "",
+            "lab": "2"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "category": "count",
+      "question": "How many tests on veal calves were positive for Pasteurella multocida?",
+      "expected": {
+        "numbers": [
+          141
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "There were 141 positive tests out of 337 tests on veal calves for Pasteurella multocida.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 27.4,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "diagnostic_test": "",
+            "pathogen": "Pasteurella multocida",
+            "breed": "Veal",
+            "species": "Cattle",
+            "sample_type": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "category": "pigs",
+      "question": "How many pig samples were tested for PRRS in Spain?",
+      "expected": {
+        "numbers": [
+          668
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "In Spain, 668 pig samples were tested for PRRS, and 281 of them were positive.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 22.8,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "pathogen": "PRRS",
+            "species": "Pig",
+            "country": "Spain"
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "category": "count",
+      "question": "How many tests were done in France from 2020 to 2022?",
+      "expected": {
+        "numbers": [
+          1365
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "From 2020 to 2022, 1,365 tests were done in France, including both cattle and pigs.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 28.3,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "species": "",
+            "country": "France",
+            "date_from": "2020",
+            "date_to": "2022"
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "category": "count",
+      "question": "How many positive Mannheimia haemolytica results came from autopsy samples in lab 4?",
+      "expected": {
+        "numbers": [
+          45
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "There were 45 positive results for Mannheimia haemolytica from autopsy samples in lab 4, which is 27.4% of the tested samples.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 27.9,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "pathogen": "Mannheimia haemolytica",
+            "sample_type": "Autopsy",
+            "lab": "4"
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "category": "positivity",
+      "question": "What is the positivity rate of bovine coronavirus across all laboratories?",
+      "expected": {
+        "numbers": [
+          30.9
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "The positivity rate for bovine coronavirus (BCV) across all laboratories is 30.9%. This is calculated from 364 positive tests out of a total of 1,179 tested samples.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 25.7,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "pathogen": "BCV",
+            "species": "Cattle",
+            "group_by": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "category": "positivity",
+      "question": "What percentage of PI3 tests were positive in Belgium?",
+      "expected": {
+        "numbers": [
+          11.0
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "In Belgium, 11.0% of PI3 tests were positive. This is calculated as 57 positive tests out of 519 total tests.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 24.9,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "pathogen": "PI3",
+            "country": "Belgium",
+            "group_by": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "category": "positivity",
+      "question": "What is the positivity percentage for Histophilus somni when tested by culture?",
+      "expected": {
+        "numbers": [
+          13.6
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "The positivity percentage for Histophilus somni when tested by culture is 13.6%. This is calculated from 118 positive cases out of 866 tested samples.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 27.4,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "group_by": "",
+            "pathogen": "Histophilus somni",
+            "diagnostic_test": "Culture"
+          }
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "category": "positivity",
+      "question": "What was the BRSV positivity rate in January 2022?",
+      "expected": {
+        "numbers": [
+          22.6
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "The BRSV positivity rate in January 2022 was 22.6%, based on 7 positive out of 31 tested samples.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 25.8,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "pathogen": "BRSV",
+            "month": "2022-01",
+            "group_by": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "category": "pigs",
+      "question": "What is the positivity rate of swine influenza virus in pigs?",
+      "expected": {
+        "numbers": [
+          24.3
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "The positivity rate for Swine influenza virus in pigs is 24.3%, based on 177 positive cases out of 727 tested samples.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 24.6,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "pathogen": "Swine influenza virus",
+            "species": "Pig",
+            "group_by": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "category": "positivity",
+      "question": "What is the positivity rate for bovine coronavirus in dairy cattle tested with PCR?",
+      "expected": {
+        "numbers": [
+          26.7
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "The positivity rate for bovine coronavirus in dairy cattle tested with PCR is 43.5%, with the highest positivity found at Lab 1.",
+      "correct": false,
+      "reason": "expected 26.7, answer has [43.5, 1.0]",
+      "seconds": 35.5,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "species": "Cattle",
+            "sample_type": "Unknown",
+            "diagnostic_test": "PCR",
+            "group_by": "lab",
+            "pathogen": "BCV"
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "category": "comparison",
+      "question": "Which pathogen has the highest positivity rate overall?",
+      "expected": {
+        "numbers": [],
+        "any_text": [
+          "PRRS",
+          "Porcine reproductive"
+        ],
+        "all_text": [],
+        "refusal": false,
+        "compare": "pathogen",
+        "rivals": [
+          "PM",
+          "Pasteurella multocida",
+          "BRSV",
+          "respiratory syncytial",
+          "BCV",
+          "coronavirus",
+          "corona virus",
+          "MB",
+          "Mycoplasma bovis",
+          "PI3",
+          "parainfluenza",
+          "HS",
+          "Histophilus",
+          "MH",
+          "Mannheimia haemolytica",
+          "hyopneumoniae",
+          "Lawsonia",
+          "swine influenza"
+        ]
+      },
+      "answer": "The pathogen with the highest positivity rate overall is PRRS (Porcine Reproductive And Respiratory Syndrome Virus) with a positivity rate of 42.1%.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 59.4,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "group_by": "pathogen",
+            "species": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "category": "comparison",
+      "question": "Which pathogen has the lowest positivity rate overall?",
+      "expected": {
+        "numbers": [],
+        "any_text": [
+          "PI3",
+          "parainfluenza"
+        ],
+        "all_text": [],
+        "refusal": false,
+        "compare": "pathogen",
+        "rivals": [
+          "PM",
+          "Pasteurella multocida",
+          "BRSV",
+          "respiratory syncytial",
+          "BCV",
+          "coronavirus",
+          "corona virus",
+          "MB",
+          "Mycoplasma bovis",
+          "HS",
+          "Histophilus",
+          "MH",
+          "Mannheimia haemolytica",
+          "hyopneumoniae",
+          "Lawsonia",
+          "swine influenza",
+          "PRRS",
+          "Porcine reproductive"
+        ]
+      },
+      "answer": "The pathogen with the lowest positivity rate overall is PI3 (Parainfluenza-3) with a positivity rate of 9.9%.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 57.7,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "group_by": "pathogen",
+            "species": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "category": "comparison",
+      "question": "Which laboratory tested the most samples?",
+      "expected": {
+        "numbers": [],
+        "any_text": [
+          "lab 1",
+          "laboratory 1"
+        ],
+        "all_text": [],
+        "refusal": false,
+        "compare": "lab",
+        "rivals": [
+          "lab 2",
+          "laboratory 2",
+          "lab 3",
+          "laboratory 3",
+          "lab 4",
+          "laboratory 4",
+          "lab 5",
+          "laboratory 5",
+          "lab 6",
+          "laboratory 6",
+          "lab 7",
+          "laboratory 7",
+          "lab 8",
+          "laboratory 8"
+        ]
+      },
+      "answer": "The laboratory that tested the most samples is Lab 1, with 3000 tests conducted.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 40.0,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "group_by": "lab",
+            "species": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "category": "comparison",
+      "question": "Which country has the highest positivity rate for BRSV?",
+      "expected": {
+        "numbers": [],
+        "any_text": [
+          "France"
+        ],
+        "all_text": [],
+        "refusal": false,
+        "compare": "country",
+        "rivals": [
+          "Belgium",
+          "The Netherlands",
+          "Ireland"
+        ]
+      },
+      "answer": "The country with the highest positivity rate for BRSV is France, with a positivity rate of 23.5%.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 34.6,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "species": "Cattle",
+            "pathogen": "BRSV",
+            "group_by": "country"
+          }
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "category": "comparison",
+      "question": "Which breed has the highest positivity rate for Mycoplasma bovis?",
+      "expected": {
+        "numbers": [],
+        "any_text": [
+          "Veal"
+        ],
+        "all_text": [],
+        "refusal": false,
+        "compare": "breed",
+        "rivals": [
+          "Dairy",
+          "Beef",
+          "Mixed",
+          "Unknown",
+          "Suckler"
+        ]
+      },
+      "answer": "The breed with the highest positivity rate for Mycoplasma bovis is Veal, with a positivity rate of 27.8%.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 47.3,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "pathogen": "Mycoplasma bovis",
+            "breed": "Beef, Dairy, Suckler, Veal, Mixed, Unknown",
+            "group_by": "breed"
+          }
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "category": "comparison",
+      "question": "Which diagnostic test gives the highest positivity rate for Pasteurella multocida?",
+      "expected": {
+        "numbers": [],
+        "any_text": [
+          "NPS"
+        ],
+        "all_text": [],
+        "refusal": false,
+        "compare": "diagnostic_test",
+        "rivals": [
+          "Culture",
+          "PCR"
+        ]
+      },
+      "answer": "The NPS diagnostic test gives the highest positivity rate for Pasteurella multocida, with a positivity rate of 47.6%.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 28.4,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "pathogen": "Pasteurella multocida",
+            "group_by": "diagnostic_test"
+          }
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "category": "comparison",
+      "question": "For Mannheimia haemolytica, which gives a higher positivity rate: PCR or culture?",
+      "expected": {
+        "numbers": [],
+        "any_text": [
+          "PCR"
+        ],
+        "all_text": [],
+        "refusal": false,
+        "compare": "diagnostic_test",
+        "rivals": [
+          "Culture"
+        ]
+      },
+      "answer": "For Mannheimia haemolytica, PCR gives a higher positivity rate than Culture, with 30.1% positive tests compared to 21.2% for Culture.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 35.2,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "pathogen": "Mannheimia haemolytica",
+            "diagnostic_test": "PCR,Culture",
+            "group_by": "diagnostic_test"
+          }
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "category": "pigs",
+      "question": "Which pig pathogen has the highest positivity rate?",
+      "expected": {
+        "numbers": [],
+        "any_text": [
+          "PRRS",
+          "Porcine reproductive"
+        ],
+        "all_text": [],
+        "refusal": false,
+        "compare": "pathogen",
+        "rivals": [
+          "hyopneumoniae",
+          "Lawsonia",
+          "swine influenza"
+        ]
+      },
+      "answer": "The pig pathogen with the highest positivity rate is PRRS (Porcine Reproductive And Respiratory Syndrome Virus), with a positivity rate of 42.1%.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 45.6,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "pathogen": "PRRS, Mycoplasma hyopneumoniae, Swine influenza virus, Lawsonia intracellularis",
+            "species": "Pig",
+            "group_by": "pathogen"
+          }
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "category": "time",
+      "question": "In which year was the BRSV positivity rate highest?",
+      "expected": {
+        "numbers": [],
+        "any_text": [
+          "2025"
+        ],
+        "all_text": [],
+        "refusal": false,
+        "compare": "year",
+        "rivals": [
+          "2019",
+          "2023",
+          "2021",
+          "2020",
+          "2022",
+          "2024"
+        ]
+      },
+      "answer": "The BRSV positivity rate was highest in 2025, with a positivity percent of 24.4%.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 35.6,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "pathogen": "BRSV",
+            "group_by": "year"
+          }
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "category": "time",
+      "question": "In which month of the year is BRSV positivity highest?",
+      "expected": {
+        "numbers": [],
+        "any_text": [
+          "January",
+          "month 01",
+          "month 1",
+          "(01)"
+        ],
+        "all_text": [],
+        "refusal": false,
+        "compare": "month_of_year",
+        "rivals": [
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      "answer": "The month with the highest BRSV positivity is January, with a positivity rate of 28.0%.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 41.1,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "group_by": "month_of_year",
+            "pathogen": "BRSV"
+          }
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "category": "pigs",
+      "question": "In pigs, which production stage has the highest positivity rate for Mycoplasma hyopneumoniae?",
+      "expected": {
+        "numbers": [],
+        "any_text": [
+          "Finishing"
+        ],
+        "all_text": [],
+        "refusal": false,
+        "compare": "production_stage",
+        "rivals": [
+          "Weaning",
+          "Suckling",
+          "Nursery",
+          "Breeding"
+        ]
+      },
+      "answer": "In pigs, the production stage with the highest positivity rate for Mycoplasma hyopneumoniae is Finishing, with a positivity rate of 39.1%.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 46.1,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "pathogen": "Mycoplasma hyopneumoniae",
+            "production_stage": "Suckling, Nursery, Weaning, Finishing, Breeding",
+            "group_by": "production_stage",
+            "species": "Pig"
+          }
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "category": "ontology reasoning",
+      "question": "How many tests were positive for bacterial pathogens?",
+      "expected": {
+        "numbers": [
+          2522
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "There were 2,522 positive tests for bacterial pathogens out of 9,764 total tests, which is a positivity rate of 25.8%.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 22.3,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "pathogen": "bacteria",
+            "species": "Cattle, Pig"
+          }
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "category": "ontology reasoning",
+      "question": "What is the positivity rate of viral pathogens in the Netherlands?",
+      "expected": {
+        "numbers": [
+          20.0
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "The positivity rate for viral pathogens in cattle in the Netherlands is 20.0%.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 22.1,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "species": "Cattle",
+            "group_by": "",
+            "pathogen": "virus",
+            "country": "The Netherlands"
+          }
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "category": "ontology reasoning",
+      "question": "How many tests for viruses were done with NPS?",
+      "expected": {
+        "numbers": [
+          511
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "511 tests for viruses were done with NPS.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 20.6,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "pathogen": "virus",
+            "diagnostic_test": "NPS",
+            "species": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "category": "ontology reasoning",
+      "question": "What is the positivity rate of bacterial pathogens in beef cattle?",
+      "expected": {
+        "numbers": [
+          27.7
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "The positivity rate for bacterial pathogens in beef cattle is 27.7%, based on 635 positive out of 2291 tested samples.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 24.9,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "species": "Cattle",
+            "group_by": "",
+            "pathogen": "bacteria",
+            "breed": "Beef"
+          }
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "category": "ontology knowledge",
+      "question": "What is BRSV?",
+      "expected": {
+        "numbers": [],
+        "any_text": [
+          "respiratory syncytial"
+        ],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "BRSV stands for Bovine Respiratory Syncytial Virus, which is a pathogenic virus affecting cattle. It is also known by other names such as Bovine orthopneumovirus and Virus sincitial respiratorio bovino.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 29.9,
+      "tool_calls": [
+        {
+          "tool": "describe_term",
+          "arguments": {
+            "term": "BRSV"
+          }
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "category": "ontology knowledge",
+      "question": "Is PI3 a virus or a bacterium?",
+      "expected": {
+        "numbers": [],
+        "any_text": [
+          "virus"
+        ],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "PI3 is a virus. It belongs to the Paramyxoviridae family and causes upper respiratory tract infections in cattle.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 26.7,
+      "tool_calls": [
+        {
+          "tool": "describe_term",
+          "arguments": {
+            "term": "PI3"
+          }
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "category": "ontology knowledge",
+      "question": "What does TTA stand for?",
+      "expected": {
+        "numbers": [],
+        "any_text": [
+          "trans-tracheal aspirate",
+          "transtracheal aspirate",
+          "trans tracheal aspirate"
+        ],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "TTA stands for Trans-tracheal Aspirate, which is a diagnostic sample collected by inserting a catheter through the trachea to obtain lower respiratory tract secretions. This method is used for the accurate identification of bacterial pathogens.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 23.4,
+      "tool_calls": [
+        {
+          "tool": "search_terms",
+          "arguments": {
+            "text": "TTA"
+          }
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "category": "ontology knowledge",
+      "question": "According to the ontology, which type of disease does Pasteurella multocida cause?",
+      "expected": {
+        "numbers": [],
+        "any_text": [
+          "bacterial disease"
+        ],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "Pasteurella multocida causes Bacterial Disease in cattle according to the ontology.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 23.0,
+      "tool_calls": [
+        {
+          "tool": "describe_term",
+          "arguments": {
+            "term": "Pasteurella multocida"
+          }
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "category": "ontology knowledge",
+      "question": "According to the ontology, which countries are geographic neighbours of Belgium?",
+      "expected": {
+        "numbers": [],
+        "any_text": [],
+        "all_text": [
+          "France",
+          "Netherlands"
+        ],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "The geographic neighbors of Belgium are France and The Netherlands.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 19.1,
+      "tool_calls": [
+        {
+          "tool": "describe_term",
+          "arguments": {
+            "term": "Belgium"
+          }
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "category": "multilingual",
+      "question": "Hoeveel testen met kweek waren positief?",
+      "expected": {
+        "numbers": [
+          689
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "Met kweek werden in totaal 3,513 testen uitgevoerd, waarvan 689 positief uitkwamen, wat een positiviteit van 19.6% is.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 25.4,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "group_by": "",
+            "diagnostic_test": "Culture"
+          }
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "category": "multilingual",
+      "question": "Hoeveel testen zijn er uitgevoerd in België?",
+      "expected": {
+        "numbers": [
+          4400
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "Er zijn in totaal 4400 testen uitgevoerd in België, waarvan 1076 positief waren. Dit geeft een positiviteit van 24.5%.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 24.9,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "species": "",
+            "country": "Belgium"
+          }
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "category": "multilingual",
+      "question": "How many tests were positive for Bovine orthopneumovirus?",
+      "expected": {
+        "numbers": [
+          251
+        ],
+        "any_text": [],
+        "all_text": [],
+        "refusal": false,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "There were 251 positive tests out of 1275 for Bovine orthopneumovirus, which is a positivity rate of 19.7%. Note that the pathogen name in the graph is BRSV (Bovine Respiratory Syncytial Virus) instead of Bovine orthopneumovirus.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 34.3,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "pathogen": "Bovine orthopneumovirus",
+            "species": "Cattle"
+          }
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "category": "no data",
+      "question": "How many tests were positive for Salmonella?",
+      "expected": {
+        "numbers": [],
+        "any_text": [],
+        "all_text": [],
+        "refusal": true,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "The graph has no data for Salmonella. Valid pathogens in this graph include Bovine Corona Virus, Bovine Respiratory Syncytial Virus, Histophilus somni, Mycoplasma bovis, Mannheimia haemolytica, Porcine Reproductive And Respiratory Syndrome Virus, and others.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 36.0,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "pathogen": "Salmonella",
+            "species": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "category": "no data",
+      "question": "How many poultry samples were positive for infectious bronchitis?",
+      "expected": {
+        "numbers": [],
+        "any_text": [],
+        "all_text": [],
+        "refusal": true,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "The graph contains data only for cattle and pigs, not poultry. Therefore, there is no data for poultry samples positive for infectious bronchitis.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 49.9,
+      "tool_calls": []
+    },
+    {
+      "id": 40,
+      "category": "no data",
+      "question": "How many BRSV tests were positive in 2030?",
+      "expected": {
+        "numbers": [],
+        "any_text": [],
+        "all_text": [],
+        "refusal": true,
+        "compare": "",
+        "rivals": []
+      },
+      "answer": "The graph has no data for BRSV tests in 2030.",
+      "correct": true,
+      "reason": "ok",
+      "seconds": 52.3,
+      "tool_calls": [
+        {
+          "tool": "test_statistics",
+          "arguments": {
+            "year": "2030",
+            "species": "Cattle",
+            "pathogen": "BRSV"
+          }
+        }
+      ]
+    }
+  ]
+}
